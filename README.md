@@ -29,7 +29,7 @@ No diretório onde se encontra o arquivo [broken-database.json](https://github.c
 Output: [Diretório "Saídas"](https://github.com/bzamith/processo_seletivo-racoon/tree/master/Saidas)
 
 ## Lógica
-A classe Produto é criada para poder armanezar os dados de cada produto afim de poder fazer as validações solicitadas. Para as correções, a classe não é utilizada, fazendo-se uso apenas de parsing do arquivo [broken-database.json](https://github.com/bzamith/processo_seletivo-racoon/blob/master/broken-database.json)).
+A classe Produto é criada para poder armanezar os dados de cada produto afim de poder fazer as validações solicitadas. Para as correções, a classe não é utilizada, fazendo-se uso apenas de parsing do arquivo [broken-database.json](https://github.com/bzamith/processo_seletivo-racoon/blob/master/broken-database.json).
 
 Depois de armazenadas as instâncias de Produto, as validações foram feitas a partir de uma tabela (dataframe) do [Pandas](https://pandas.pydata.org/). As funções "[sort_values](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html)" e "[groupby](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)" auxiliam na ordenação e no agrupamento, respectivamente. 
 
