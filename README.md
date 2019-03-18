@@ -20,7 +20,7 @@ Para validação, criar
 * Classe "Produto"
 
 ## Execução
-No diretório onde se encontra o arquivo [broken-database.json](https://github.com/bzamith/processo_seletivo-racoon/blob/master/broken-database.json), executar:
+Neste diretório, executar:
 
 ```bash
 > pip3 install -r requirements.txt
