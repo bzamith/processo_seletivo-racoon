@@ -23,6 +23,7 @@ Para validação, criar
 No diretório onde se encontra o arquivo [broken-database.json](https://github.com/bzamith/processo_seletivo-racoon/blob/master/broken-database.json), executar:
 
 ```bash
+> pip3 install -r requirements.txt
 > python3 psRacoon.py
 ```
 
