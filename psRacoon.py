@@ -1,5 +1,9 @@
 #Processo Seletivo Racoon
 import pandas as pd 
+import os
+def create_dir(dir_name):
+	if not os.path.exists(dir_name):
+		os.makedirs(dir_name)
 
 class Produto:
 	def __init__(self,p_id,name,quantity,price,category):
@@ -74,7 +78,7 @@ def imprime_nomes(produtos):
 	d = {'name': name, 'category': category, 'p_id': p_id}
 	df = pd.DataFrame(data = d)
 	df = df.sort_values(['category','p_id'],ascending=[True,True])
-	with open('imprimenomes.txt', 'w') as file:
+	with open("Saidas/imprimenomes.txt", 'w') as file:
 		print(df, file=file)
 
 #Imprime valor do estoque por categoria
@@ -90,7 +94,7 @@ def imprime_valor_estoque(produtos):
 	df = pd.DataFrame(data = d)
 	#Ordena
 	df = df.groupby(['category']).sum()
-	with open('imprimeestoque.txt', 'w') as file:
+	with open("Saidas/imprimeestoque.txt", 'w') as file:
 		print(df, file=file)
 
 #Le bd
@@ -101,7 +105,7 @@ def le_bd(file_name):
 
 #Escreve bd
 def escreve_bd(file_name):
-	with open(file_name, 'w') as file:
+	with open("Saidas/"+file_name, 'w') as file:
 		for line in data:
 			file.write(line)
 
@@ -109,6 +113,7 @@ def escreve_bd(file_name):
 if __name__ == '__main__':
 	#Le bd corrompido
 	data = le_bd("broken-database.json")
+	create_dir("Saidas")
 	
 	#Faz as correcoes
 	corrige_nomes(data)
@@ -119,7 +124,7 @@ if __name__ == '__main__':
 	escreve_bd("corrected-database.json")
 	
 	#Verifica
-	data = le_bd("corrected-database.json")
+	data = le_bd("Saidas/corrected-database.json")
 	produtos = salva_produtos(data)
 	imprime_nomes(produtos)
 	imprime_valor_estoque(produtos)
