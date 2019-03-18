@@ -1,0 +1,6 @@
+                      valor
+category                   
+Acessórios             0.00
+Eletrodomésticos  315752.67
+Eletrônicos       203989.20
+Panelas             4049.64

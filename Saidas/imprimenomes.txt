@@ -1,0 +1,23 @@
+           category                                               name  \
+9        Acessórios          Mouse Gamer Predator cestus 510 Fox Preto   
+2  Eletrodomésticos  Refrigerador bottom Freezer Electrolux de 02 P...   
+3  Eletrodomésticos  Fogão de Piso Electrolux de 04 bocas Mesa de V...   
+4  Eletrodomésticos  Forno Micro-ondas Panasonic com capacidade de ...   
+1  Eletrodomésticos  Lava & Seca 102 Kg Samsung Eco bubble branca c...   
+7       Eletrônicos        Kit Gamer acer - Notebook + Headset + Mouse   
+8       Eletrônicos  Monitor 29 LG FHD Ultrawide com 1000:1 de cont...   
+5       Eletrônicos  Smart TV 4K Sony LED 65” 4K X-Reality Pro UpSc...   
+6       Eletrônicos  Home Theater LG com blu-ray 3D 5.1 canais e 1000W   
+0           Panelas  Conjunto de Panelas antiaderentes com 05 Peças...   
+
+      p_id  
+9  1911864  
+2  1316334  
+3  6502394  
+4  9576720  
+1  9628920  
+7  2162952  
+8  3500957  
+5  8875900  
+6  9746439  
+0  5677240  
